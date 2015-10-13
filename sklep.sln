@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sklep", "sklep\sklep.csproj", "{8838652D-10FC-426B-B2DC-FBDADA98083B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sklep.Tests", "sklep.Tests\sklep.Tests.csproj", "{BBE88F3B-63FB-4F39-ACE6-306627DF3059}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{9FCDCDF5-9828-4818-B5EE-FF65BB195281}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8838652D-10FC-426B-B2DC-FBDADA98083B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8838652D-10FC-426B-B2DC-FBDADA98083B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8838652D-10FC-426B-B2DC-FBDADA98083B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8838652D-10FC-426B-B2DC-FBDADA98083B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBE88F3B-63FB-4F39-ACE6-306627DF3059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE88F3B-63FB-4F39-ACE6-306627DF3059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE88F3B-63FB-4F39-ACE6-306627DF3059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE88F3B-63FB-4F39-ACE6-306627DF3059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FCDCDF5-9828-4818-B5EE-FF65BB195281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FCDCDF5-9828-4818-B5EE-FF65BB195281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FCDCDF5-9828-4818-B5EE-FF65BB195281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FCDCDF5-9828-4818-B5EE-FF65BB195281}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
