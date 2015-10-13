@@ -5,23 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Models
 {
-	public class KategoriaProduktu
+	public class Produkt
 	{
-		public KategoriaProduktu()
-		{
-			Produkty = new HashSet<Produkt>();
-		}
 		[Key]
 		public int Id { get; set; }
+		[Required]
 		[MaxLength(30)]
-		[Required]
 		public string Nazwa { get; set; }
-		[MaxLength(150)]
 		[Required]
-		public string Opis { get; set; }
-		public virtual ICollection<Produkt> Produkty { get; private set; }
+		public decimal Cena { get; set; }
+		[ForeignKey("KategoriaProduktu")]
+		public int idProduktu { get; set; }
+		public virtual KategoriaProduktu Kategoria { get; private set; }
 	}
 }
