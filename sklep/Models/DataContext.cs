@@ -5,7 +5,7 @@ using System.Web;
 using System.Data.Entity;
 using Models;
 
-namespace sklep.Models
+namespace Sklep.Models
 {
 	public class DataContext : DbContext
 	{

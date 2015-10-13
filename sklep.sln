@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sklep", "sklep\sklep.csproj", "{8838652D-10FC-426B-B2DC-FBDADA98083B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklep", "sklep\Sklep.csproj", "{8838652D-10FC-426B-B2DC-FBDADA98083B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sklep.Tests", "sklep.Tests\sklep.Tests.csproj", "{BBE88F3B-63FB-4F39-ACE6-306627DF3059}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklep.Tests", "sklep.Tests\Sklep.Tests.csproj", "{BBE88F3B-63FB-4F39-ACE6-306627DF3059}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{9FCDCDF5-9828-4818-B5EE-FF65BB195281}"
 EndProject

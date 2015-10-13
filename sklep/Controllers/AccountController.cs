@@ -8,9 +8,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using sklep.Models;
+using Sklep.Models;
 
-namespace sklep.Controllers
+namespace Sklep.Controllers
 {
     [Authorize]
     public class AccountController : Controller
