@@ -13,7 +13,8 @@ namespace Sklep.Controllers
 		private DataContext context = new DataContext();
         public ActionResult Index()
         {
-            return View();
+			var kategorie = context.Kategorie.AsNoTracking();
+			return View(kategorie);
         }
 		[HttpGet]
 		public ActionResult Create()

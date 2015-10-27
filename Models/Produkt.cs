@@ -18,8 +18,8 @@ namespace Models
 		public string Nazwa { get; set; }
 		[Required]
 		public decimal Cena { get; set; }
-		[ForeignKey("KategoriaProduktu")]
-		public int idProduktu { get; set; }
+		//[ForeignKey("KategoriaProduktu")]
+		//public int idProduktu { get; set; }
 		public virtual KategoriaProduktu Kategoria { get; private set; }
 	}
 }
