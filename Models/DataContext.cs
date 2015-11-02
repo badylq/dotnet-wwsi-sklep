@@ -4,8 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 using Models;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
-namespace Sklep.Models
+namespace Models
 {
 	public class DataContext : DbContext
 	{
