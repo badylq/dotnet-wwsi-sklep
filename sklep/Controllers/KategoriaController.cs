@@ -71,11 +71,33 @@ namespace Sklep.Controllers
 		    }
 	    }
 
-	    //[HttpGet]
-	    //public ViewResult Delete(int id)
-	    //{
-		   // var kategoria = repo.PobierzKategoriePoId(id);
-	    //}
+		//[HttpGet]
+		//public ViewResult Delete(int id)
+		//{
+		//    var kategoria = repo.PobierzKategoriePoId(id);
+		//    if (kategoria != null)
+		//    {
+		//        return View(kategoria);
+		//    }
+		//    else
+		//    {
+		//        ViewBag.ErrorMsg = "Kategoria nie istnieje";
+		//        return View();
+		//    }
+		//}
 
-    }
+		[HttpGet]
+		public ActionResult Delete(int id)
+		{
+			repo.UsunKategorie(id);
+			return RedirectToAction("Index");
+		}
+
+		//[HttpPost]
+		//public ActionResult Delete(int id)
+		//{
+		//    repo.UsunKategorie(id);
+		//    return RedirectToAction("Index");
+		//}
+	}
 }

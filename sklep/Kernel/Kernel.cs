@@ -15,6 +15,7 @@ namespace Sklep.Kernel
 		public override void Load()
 		{
 			Bind<IKategoriaRepo>().To<KategoriaRepo>().InSingletonScope();
+			Bind<IProduktRepo>().To<ProduktRepo>().InSingletonScope();
 		}
 	}
 }

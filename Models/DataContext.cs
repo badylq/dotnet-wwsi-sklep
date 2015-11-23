@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Data.Entity;
-using Models;
+﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace Models
@@ -13,9 +8,20 @@ namespace Models
 		public DataContext()
 			: base("DefaultConnection")
 		{
-
 		}
+
 		public DbSet<Produkt> Produkty { get; set; }
 		public DbSet<KategoriaProduktu> Kategorie { get; set; }
+
+		protected override void OnModelCreating(DbModelBuilder modelBuilder)
+		{
+			modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+			modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+			base.OnModelCreating(modelBuilder);
+
+			modelBuilder.Entity<KategoriaProduktu>()
+				.HasMany(x => x.Produkty)
+				.WithRequired(x => x.Kategoria);
+		}
 	}
 }

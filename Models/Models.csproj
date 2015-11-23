@@ -49,8 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cart.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="KategoriaProduktu.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Produkt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

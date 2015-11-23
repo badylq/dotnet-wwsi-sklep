@@ -31,7 +31,12 @@ namespace Repositories.Imp
 
 		public void UsunKategorie(int idKategorii)
 		{
-			
+			var katFromDb = context.Kategorie.FirstOrDefault(x => x.Id.Equals(idKategorii));
+			if (katFromDb != null)
+			{
+				context.Kategorie.Remove(katFromDb);
+				context.SaveChanges();
+			}
 		}
 
 		public IQueryable<KategoriaProduktu> PobierzKategorie()
